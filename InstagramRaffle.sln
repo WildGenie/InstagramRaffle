@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30021.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstagramRaffle", "InstagramRaffle\InstagramRaffle.csproj", "{07BE8ADF-52C1-4480-A3AE-419475DE5A1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07BE8ADF-52C1-4480-A3AE-419475DE5A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BE8ADF-52C1-4480-A3AE-419475DE5A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BE8ADF-52C1-4480-A3AE-419475DE5A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BE8ADF-52C1-4480-A3AE-419475DE5A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {085377D1-6348-45E5-91C2-BB3510B5166A}
+	EndGlobalSection
+EndGlobal
