@@ -77,11 +77,24 @@ namespace InstagramRaffle
 
     }
 
+    internal static IEnumerable<T> DistinctIenumerable<T>(IEnumerable<T> input)
+    {
+      var passedValues = new Dictionary<T, bool>();
+      foreach (T item in input)
+      {
+        if (!passedValues.ContainsKey(item))
+        {
+          passedValues.Add(item, false);
+          yield return item;
+        }
+      }
+    }
+
     private void CekilisClick(object sender, EventArgs e)
     {
       var rnd = new Random();
 
-      var karma = AyiklananText.Lines.OrderBy(r => rnd.Next()).Where(k => Regex.IsMatch(k, @"^([^\t]*)\t(.*)")).Select(t => t.Split('\t')[0]).Distinct();
+      var karma = DistinctIenumerable(AyiklananText.Lines.OrderBy(r => rnd.Next()).Where(k => Regex.IsMatch(k, @"^([^\t]*)\t(.*)")).Select(t => t.Split('\t')[0]));
 
       var kazananlar = karma.Take(10).ToArray();
 
